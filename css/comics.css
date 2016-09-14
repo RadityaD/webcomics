@@ -11,6 +11,10 @@ h1 {
   font-size: 100px;
 }
 
+button {
+  margin: 10px 0px 10px 0px;
+}
+
 #wrapper {
   background-color: #F8F8F2;
   padding: 10px;

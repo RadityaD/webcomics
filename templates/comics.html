@@ -11,19 +11,29 @@
   <!-- VIEWER -->
   <div class="container">
     <div class="row">
-      <div class="col-sm-3 col-xs-4"><button ng-click="comicsCtrl.previousPage()" class="btn-block">previous</button></div>
+      <div class="col-sm-3 col-xs-4"></div>
 
       <div class="col-sm-6 col-xs-4"><img class="img-responsive center-block" ng-src="{{comicsCtrl.comicsData[comicsCtrl.currentId].images[comicsCtrl.getPage()]}}"></img></div>
 
-      <div class="col-sm-3 col-xs-4"><button ng-click="comicsCtrl.nextPage()" class="btn-block">next</button></div>
+      <div class="col-sm-3 col-xs-4"></div>
     </div>
   </div>
+
+
+    <div class="row">
+      <div class="col-sm-6">
+        <button ng-click="comicsCtrl.previousPage()"class="btn btn-default btn-block">previous</button>
+      </div>
+      <div class="col-sm-6">
+        <button ng-click="comicsCtrl.nextPage()" class="btn btn-default btn-block">next</button>
+      </div>
+    </div>
 
   <!-- PAGE -->
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <div id="comicViewer" class="text-center"><h3>
+        <div id="comicViewer"><h3>
           Page {{comicsCtrl.page+1}} of {{comicsCtrl.comicsData[comicsCtrl.currentId].images.length}}</h3>
         </div>
       </div>
