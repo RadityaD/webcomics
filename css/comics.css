@@ -1,0 +1,22 @@
+@import 'https://fonts.googleapis.com/css?family=Cookie|Open+Sans';
+body {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background-color: #F8DEBD;
+  font-family: "Open Sans";
+}
+
+h1 {
+  font-family: "Cookie";
+  font-size: 100px;
+}
+
+#wrapper {
+  background-color: #F8F8F2;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#viewer {
+  width: 50%;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="webComics" ng-controller="comicsController as comicsCtrl">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Comics</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css"></link>
+  <link rel="stylesheet" href="./css/comics.css"></link>
+  <script src="./js/jquery-3.1.0.min.js"></script>
+  <script src="./js/angular.min.js"></script>
+  <script src="./js/angular-route.min.js"></script>
+  <script src="./js/comics.js"></script>
+</head>
+<body>
+<div id="wrapper" class="container">
+  <!-- TITLE -->
+  <div id="title" class="well"><h1 class="text-center">Raditya's Web Comics Site</h1></div>
+
+  <!-- COMICS LIST -->
+  <div id="comicsList" class="well">
+    <h3>Comics List</h3>
+    <ul>
+      <li ng-repeat="comics in comicsCtrl.comicsData">
+        <a href="#comics/{{comics.number}}">{{comics.title}}</a></li>
+    </ul>
+  </div>
+
+  <ng-view></ng-view>
+</div>
+</body>
+</html>
